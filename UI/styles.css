@@ -1,0 +1,66 @@
+/* Body styling */
+body{
+    background-color: rgb(192, 109, 109);
+    color: #fdfbfb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;
+    line-height: 1.5em;
+    margin: 0;
+    background-image: url('images/query2.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+/* Header design */
+header {
+    background-color: rgb(121, 121, 247);
+    color: white;
+}
+
+#body {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    text-align: center;
+    margin: 20px 30px 10px 50px;
+    padding: 20px 20px;
+    color: blue;
+    font-size: 350%;
+    text-shadow: 2px 2px rgb(7, 7, 7);
+}
+
+#navbar{
+    color: #fff;
+    background-color: rgb(31, 31, 204);
+}
+#navbar ul{
+    padding: 0%;
+    list-style: none;
+}
+#navbar li{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#navbar a{
+    font-size: 18px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+#navbar a:hover{
+    color: rgb(34, 12, 4);
+}
+#navbar a:active{
+    color: greenyellow;
+}
+
+input {
+    width: 10%;
+}
+input[type=submit]{
+    width: 15%;
+}
