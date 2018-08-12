@@ -6,7 +6,7 @@ body{
     font-size: 16;
     line-height: 1.5em;
     margin: 0;
-    background-image: url('images/query2.jpg');
+    background-image: url('images/query.jpg');
     background-size: cover;
     background-repeat:no-repeat;
 }
@@ -18,15 +18,17 @@ header {
 }
 
 #body {
-    max-width: 960px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .heading {
+
+    padding-bottom: 0%;
     text-align: center;
-    margin: 20px 30px 10px 50px;
-    padding: 20px 20px;
+
     color: blue;
     font-size: 350%;
     text-shadow: 2px 2px rgb(7, 7, 7);
@@ -37,7 +39,7 @@ header {
     background-color: rgb(31, 31, 204);
 }
 #navbar ul{
-    padding: 0%;
+    padding: 1%;
     list-style: none;
 }
 #navbar li{
@@ -56,6 +58,48 @@ header {
 }
 #navbar a:active{
     color: greenyellow;
+}
+
+#front {
+    font-size: 200%;
+    line-height: 100%;
+    color: rgb(5, 5, 5);
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #119a9bcf;
+    box-shadow: 5px 10px #0000008f;
+}
+.ask {
+    color: white;
+}
+
+.slogan {
+    font-size: 250%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: dodgerblue;
+    text-emphasis: bold;
+    text-align: center;
+    text-shadow: 1px 1px rgb(34, 12, 4);
+}
+
+.buttons {
+    background-color: rgb(12, 96, 223);
+    color: wheat;
+    padding: 10px;
+    border: none;
+}
+.buttons:hover{
+    background: rgb(31, 127, 238);
+    color: whitesmoke;
+}
+
+/* Designing the Footer */
+#footer{
+    background: rgb(31, 31, 204);
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    margin-top: 20px;
 }
 
 input {
