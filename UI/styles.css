@@ -23,6 +23,20 @@ header {
     margin-right: auto;
     text-align: center;
 }
+.contain {
+    text-align:center;
+    vertical-align: middle;
+    color: white;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(7, 193, 218, 0.548);
+    box-shadow: 5px 10px #0000008f;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
 
 .heading {
 
@@ -98,13 +112,40 @@ header {
     background: rgb(31, 31, 204);
     color: #fff;
     text-align: center;
-    padding: 2px;
+    padding: 10px;
     margin-top: 20px;
 }
 
-input {
-    width: 10%;
+.forms {
+    display: flex;
+    vertical-align: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
+.forms .form-pen{
+    padding-bottom: 15px;
+}
+input[type="text"]{
+    padding: 8px;
+}
+input[name="email"]{
+    padding: 8px;
+    width: 120%;
+}
+input[name="password"]{
+    padding: 8px;
+    width: 120%;
+}
+input[name="name"]{
+    padding: 8px;
+    width: 120%;
+}
+input[name="confirm"]{
+    padding: 8px;
+    width: 120%;
+}
+
 input[type=submit]{
-    width: 15%;
+    width: 105%;
 }
