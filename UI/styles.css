@@ -18,7 +18,7 @@ header {
 }
 
 #body {
-    max-width: 400px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -46,6 +46,45 @@ header {
     color: blue;
     font-size: 350%;
     text-shadow: 2px 2px rgb(7, 7, 7);
+}
+h4 {
+    color: white;
+}
+.mind {
+    font-size: 120%;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 1%;
+}
+.posted {
+    text-shadow: 2px 2px rgb(7, 7, 7);
+}
+
+.answer {
+    background-color: #08c0eeaf;
+    padding: 2%;
+    box-shadow: 5px 10px #0000008f;
+}
+dl {
+    font-size: 120%;
+    color: black;
+}
+/* Designing Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #031852d0}
+tr:nth-child(odd){background-color: rgba(22, 219, 209, 0.856)}
+
+th {
+    background-color: rgb(12, 96, 223);
+    color: white;
 }
 
 #navbar{
@@ -97,13 +136,14 @@ header {
 }
 
 .buttons {
-    background-color: rgb(12, 96, 223);
+    background-color: rgb(5, 27, 226);
     color: wheat;
     padding: 10px;
     border: none;
+    border-radius: 8px;
 }
 .buttons:hover{
-    background: rgb(31, 127, 238);
+    background: rgb(14, 221, 248);
     color: whitesmoke;
 }
 
@@ -114,6 +154,11 @@ header {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+    font-size: 150%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 .forms {
@@ -145,7 +190,14 @@ input[name="confirm"]{
     padding: 8px;
     width: 120%;
 }
+input[name="question"]{
+    padding: 8px;
+    width: 120%;
+}
 
 input[type=submit]{
-    width: 105%;
+    width: 120%;
+}
+.bottom{
+    color: rgb(4, 4, 82);
 }
