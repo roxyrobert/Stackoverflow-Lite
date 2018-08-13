@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Stackoverflow-Lite</title>
 </head>
 <body>
@@ -12,24 +13,27 @@
             <ul>
                 <li> <a href="../index.html">Home</a></li>
                 <li><a href="../index.html">Logout</a></li>
-                <li><a href="UI/profile.html">View your Profile</a></li>
-                <li><a href="UI/postquestion.html">Ask Qn</a></li>
-                <li><a href="UI/dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">View your Profile</a></li>
+                <li><a href="postquestion.html">Ask Qn</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
             </ul>
         </div>
     </header>
 
-    <div id="body">
-        <dl class="answer">
-            <h2>Answer Details </h2>
+    <div id="body" class="answer">
+            <h2 class="heading">Answer Details </h2>
+        <dl>
             <dt>Date Posted</dt> <dd><script> document.write(new Date().toLocaleDateString()); </script></dd>
-            <dt>Answer by:</dt> <dd>Roxy</dd>        
+            <dt>Answer by:</dt> <dd>Roxy</dd>    
         </dl>
-        <p>
+        <p class="mind">
             <i>The strongest force ever known to human kind is Love. <br>
             This is because it has been known to solve the greatest problems to human nature </i>
         </p>
     </div>
+    <footer id="footer">
+        <strong>Stackoverflow-Lite... Learn, Share, Grow</strong>
+    </footer>
     
 </body>
 </html>
