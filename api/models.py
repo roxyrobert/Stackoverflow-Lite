@@ -13,6 +13,9 @@ class Questions:
     def get_poster(self):
         return self.poster
     
+    def get_id(self):
+        return self._id
+    
 
     def post_question(self):
         '''post a question'''
