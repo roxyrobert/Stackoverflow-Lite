@@ -15,10 +15,39 @@ def add_question():
         new_question.post_question()
         return jsonify({
             'message':'Posted question successfully',
-            'status':'success'
+            'status':'ok',
+            '_id': new_question.get_id()
         }), 201
     except:
         return jsonify({
             'message': 'Invalid input data',
             'status': 'fail'
         })
+
+@app.route('/api/v1/questions/<questionId>/answers', methods = ['POST'])
+def add_answer(questionId):
+    try:
+        question = questions[int(questionId) - 1]  # to access a question by its index
+    except:
+        return jsonify({
+            'status': 'FAIL',
+            'response_message': 'Question ID not found',
+        }), 404
+    answer_data = request.get_json()
+    try:
+        validate({
+            "response": answer_data["response"],
+            "username": answer_data["username"]}, answer_schema)
+        new_answer = Answers(answer_data['response'], answer_data['username'])
+        new_answer.post_answer()
+        return jsonify({
+            'message': 'Question answered',
+            'status': 'ok',
+            'id': new_answer.get_answer_id()
+        }), 201
+    except:
+        return jsonify({
+            'message': 'Invalid input data',
+            'status': 'fail'
+        })
+    
