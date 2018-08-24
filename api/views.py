@@ -50,4 +50,16 @@ def add_answer(questionId):
             'message': 'Invalid input data',
             'status': 'fail'
         })
-    
+
+@app.route('/api/v1/questions', methods = ['GET'])
+def get_questions():
+    if len(questions) >= 1:
+        return jsonify({
+            'message': ' Below are the Posted questions',
+            'questions': questions
+        })
+    else:
+        return jsonify({
+            'message': 'There are no questions posted yet',
+            'status': 'fail'
+        })
